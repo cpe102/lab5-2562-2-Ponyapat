@@ -1,6 +1,25 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
+string mixText(string a,string b){
+	string s = "";
+	int L = a.size();
+	int LL = b.size();
+
+	int i = 0;
+	if (L == LL){
+		while (i < L){
+			s = s + a[i] + b[i];
+			i++;
+		}
+		return s;
+	
+	}else{
+		return "E";
+	}
+	
+}
 
 
 
